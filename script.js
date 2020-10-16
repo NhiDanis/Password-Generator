@@ -44,8 +44,26 @@ function writePassword() {
       alert ("Please sellect at least one type of character")
     };
 
+  // Option character types are sellected
 
+  if (characterSymbols === true) {newPassword.push(symbols)};
+  if (characterNumbers === true) {newPassword.push(numbers)};
+  if (characterLowerCase === true) {newPassword.push(lowerCase)};
+  if (characterUpperCase === true) {newPassword.push(upperCase)};
+  if (characterEmojis === true) {newPassword.push(emojis)};
 
+  let pwd = "";
+
+  while (pwd.length < length) {
+    for (let i = 0; i < newPassword.length; i++) {
+      if (pwd.length < length) {
+        let randomchars = Math.floor(Math.random() *newPassword[i].length)
+        pwd += newPassword[i][randomchars]
+      }
+    }    
+  }
+
+  console.log(pwd, `password length: ${pwd.length}`)
 
   passwordText.value = password;
 
