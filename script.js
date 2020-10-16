@@ -37,14 +37,14 @@ function writePassword() {
   let characterUpperCase = confirm ("Do you want to use uppercase letters?");
   let characterEmojis = confirm ("Do you want to use emojis?");
 
-  // Check if user sellect at least one type of character
+  // Check if user select at least one type of character
 
   if (characterSymbols === false && characterNumbers === false && characterLowerCase ===false &&
     characterUpperCase === false && characterEmojis === false ) {
-      alert ("Please sellect at least one type of character")
+      alert ("Please select at least one type of character")
     };
 
-  // Option character types are sellected
+  // Option character types are selected
 
   if (characterSymbols === true) {newPassword.push(symbols)};
   if (characterNumbers === true) {newPassword.push(numbers)};
