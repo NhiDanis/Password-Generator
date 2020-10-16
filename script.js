@@ -29,7 +29,21 @@ function writePassword() {
     alert("Password generator must be a number between 8 and 128")
   };
 
+  // Confirm the type of characters user wants to use in password generator
   
+  let characterSymbols = confirm ("Do you want to use special characters? (, ; * & %)");
+  let characterNumbers = confirm ("Do you want to use numbers?");
+  let characterLowerCase = confirm ("Do you want to use lowercase letters?");
+  let characterUpperCase = confirm ("Do you want to use uppercase letters?");
+  let characterEmojis = confirm ("Do you want to use emojis?");
+
+  // Check if user sellect at least one type of character
+
+  if (characterSymbols === false && characterNumbers === false && characterLowerCase ===false &&
+    characterUpperCase === false && characterEmojis === false ) {
+      alert ("Please sellect at least one type of character")
+    };
+
 
 
 
