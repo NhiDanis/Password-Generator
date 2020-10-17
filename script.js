@@ -8,25 +8,32 @@ let lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 let upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",];
 let emojis = ["🐷", "🐶", "🐼", "🦊", "🐭","🦁","🐯","🐨","🐻"];
 
+let passwordText = document.querySelector("#password");
 
 // Write password to the #password input
 function writePassword() {
-  let passwordText = document.querySelector("#password");
 
+  passwordText.value = "";
+  console.log('text value is', passwordText.value)
+
+   
   let newPassword = [];
 
   let passwordLength = parseInt (prompt ("Please enter a number between 8 and 128"));
 
   if (passwordLength < 8) {
     alert ("Password length required at least 8 characters")
+    return;
   };
 
   if (passwordLength > 128) {
     alert ("Password length required less than or equal to 128 characters")
+    return;
   };
 
   if (isNaN(passwordLength)) {
     alert("Password generator must be a number between 8 and 128")
+    return;
   };
 
   // Confirm the type of characters user wants to use in password generator
@@ -54,9 +61,9 @@ function writePassword() {
 
   let pwd = "";
 
-  while (pwd.length < length) {
+  while (pwd.length < passwordLength) {
     for (let i = 0; i < newPassword.length; i++) {
-      if (pwd.length < length) {
+      if (pwd.length < passwordLength) {
         let randomchars = Math.floor(Math.random() *newPassword[i].length)
         pwd += newPassword[i][randomchars]
       }
@@ -65,7 +72,7 @@ function writePassword() {
 
   console.log(pwd, `password length: ${pwd.length}`)
 
-  passwordText.value = password;
+  passwordText.value = pwd;
 
 }
 
