@@ -14,9 +14,7 @@ let passwordText = document.querySelector("#password");
 function writePassword() {
 
   passwordText.value = "";
-  console.log('text value is', passwordText.value)
 
-   
   let newPassword = [];
 
   let passwordLength = parseInt (prompt ("Please enter a number between 8 and 128"));
