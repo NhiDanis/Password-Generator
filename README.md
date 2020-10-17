@@ -12,7 +12,9 @@ The password can include:
 * The length of at least 8 characters and no more than 128 characters
 
 ## Screenshot reference:
-![image](https://user-images.githubusercontent.com/68761490/96353263-3ae66200-107f-11eb-9f32-15581e9095dd.png)
+![Screen Shot 2020-10-17 at 3 47 36 PM](https://user-images.githubusercontent.com/68761490/96354946-30cd5f00-1091-11eb-8406-2c9c78b9fae8.jpg)
+
+![Screen Shot 2020-10-17 at 3 47 50 PM](https://user-images.githubusercontent.com/68761490/96354949-33c84f80-1091-11eb-847b-c849e3f17494.jpg)
 
 ## BuiltWith
 
@@ -25,6 +27,7 @@ The password can include:
  * [List of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters)
 
 ## Links:
+* [My Github Page:](https://nhidanis.github.io/Password-Generator/)
 
 
 
