@@ -31,7 +31,7 @@ The password can include:
 * [My Github Page](https://nhidanis.github.io/Password-Generator/)
 
 ## Contact information:
-[Email](a.nhi1001@gmail.com)
+* [Email](a.nhi1001@gmail.com)
 
 
 
