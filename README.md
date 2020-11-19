@@ -28,7 +28,10 @@ The password can include:
  * [List of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters)
 
 ## Links:
-* [My Github Page:](https://nhidanis.github.io/Password-Generator/)
+* [My Github Page](https://nhidanis.github.io/Password-Generator/)
+
+## Contact information:
+[Email](a.nhi1001@gmail.com)
 
 
 
