@@ -1,4 +1,5 @@
 # Password Generator
+<img src="https://img.shields.io/badge/LICENSE-mit-green"/>
 
 ## Description: 
 
